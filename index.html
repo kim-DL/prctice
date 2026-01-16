@@ -1,50 +1,76 @@
-<header class="site-header">
-    <div class="container header-inner">
-        <a class="logo" href="#">Brand</a>
+<!DOCTYPE html>
+<html lang="ko">
 
-        <nav class="nav">
-            <a class="nav__link" href="#">Home</a>
-            <a class="nav__link" href="#">Docs</a>
-            <a class="nav__link" href="#">Pricing</a>
-        </nav>
+<head>
+    <meta charset="UTF-8" />
 
-        <button class="btn btn--primary">Sign in</button>
-    </div>
-</header>
+    <!-- 반응형 웹 필수 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<main class="container layout">
-    <section class="content">
-        <h1 class="page-title">Articles</h1>
+    <!-- 문서 설명 (SEO, 공유 미리보기용) -->
+    <meta name="description" content="CSS Flexbox 연습을 위한 한국어 웹 페이지" />
 
-        <div class="card-grid">
-            <article class="card">
-                <h2 class="card__title">Title A</h2>
-                <p class="card__desc">Short description...</p>
-                <a class="card__cta" href="#">Read more</a>
-            </article>
+    <title>CSS Flex 연습</title>
 
-            <article class="card">
-                <h2 class="card__title">Title B</h2>
-                <p class="card__desc">Short description...</p>
-                <a class="card__cta" href="#">Read more</a>
-            </article>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-            <article class="card">
-                <h2 class="card__title">Title C</h2>
-                <p class="card__desc">Short description...</p>
-                <a class="card__cta" href="#">Read more</a>
-            </article>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Brand</a>
+
+            <nav class="nav">
+                <a href="#" class="nav__link">홈</a>
+                <a href="#" class="nav__link">문서</a>
+                <a href="#" class="nav__link">가격</a>
+            </nav>
+
+            <button class="btn btn--primary">로그인</button>
         </div>
-    </section>
+    </header>
 
-    <aside class="sidebar">
-        <div class="panel">
-            <h2 class="panel__title">Filters</h2>
-            <label class="field">
-                <span class="field__label">Keyword</span>
-                <input class="field__input" type="text" placeholder="search..." />
-            </label>
-            <button class="btn">Apply</button>
-        </div>
-    </aside>
-</main>
+    <main class="container layout">
+        <section class="content">
+            <h1 class="page-title">게시글</h1>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h2 class="card__title">제목 A</h2>
+                    <p class="card__desc">간단한 설명 문장입니다.</p>
+                    <a href="#" class="card__cta">자세히 보기</a>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">제목 B</h2>
+                    <p class="card__desc">간단한 설명 문장입니다.</p>
+                    <a href="#" class="card__cta">자세히 보기</a>
+                </article>
+
+                <article class="card">
+                    <h2 class="card__title">제목 C</h2>
+                    <p class="card__desc">간단한 설명 문장입니다.</p>
+                    <a href="#" class="card__cta">자세히 보기</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="panel">
+                <h2 class="panel__title">필터</h2>
+
+                <label class="field">
+                    <span class="field__label">검색어</span>
+                    <input type="text" class="field__input" placeholder="검색어를 입력하세요" />
+                </label>
+
+                <button class="btn">적용</button>
+            </div>
+        </aside>
+    </main>
+
+</body>
+
+</html>
